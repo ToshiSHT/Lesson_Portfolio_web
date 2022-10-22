@@ -3,7 +3,6 @@ const hamburger = document.querySelector('.hamburger'),
       closeBtn = document.querySelector('.menu__close'),
       overlay = document.querySelector('.menu__overlay');
 
-
       function closeMenu (seletor) {
         seletor.addEventListener('click', e =>{
         menu.classList.remove('active');
@@ -16,4 +15,11 @@ const hamburger = document.querySelector('.hamburger'),
       closeMenu(closeBtn);
       closeMenu(overlay);
 
+ //
+ const progressValue = document.querySelectorAll('.skills__progress-value'),
+       progressBar = document.querySelectorAll('.skills__progress-bar');
+       progressBar.forEach((elem,i) => {
+       elem.style.width = progressValue[i].textContent;  
+       });
+       
     

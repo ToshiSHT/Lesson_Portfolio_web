@@ -1,0 +1,91 @@
+.skills {
+    margin-top: 120px;
+
+    &__wrapper {
+        width: 1119px;
+        margin: 60px auto 0 auto ;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        grid-auto-rows: 270px;
+        gap:13px;
+        align-items: start;
+        justify-content:space-around;
+
+    }
+    &__item {
+        padding: 30px 30px 25px 30px;
+        width: 270px;
+        height: 270px;
+        border: 1px solid black;
+        &:nth-child(4){
+            padding-top: 45px;
+            .title {
+                margin-top: 25px;
+            }
+        }
+        &:nth-child(7){
+            padding-top: 45px;
+            .title {
+                margin-top: 25px;
+            }
+        }
+        &-title {
+            margin-top: 20px;
+        }
+        &-descr {
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+
+        }
+    
+    }
+    &__progress {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        grid-auto-rows: 70px;
+        column-gap: 45px;
+        row-gap: 30px;
+        &-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            padding-top: 5px;
+            position: relative;
+        }
+        &-title{
+            padding-left: 12px;
+            @include before-circle;
+            &:before{
+                top: -2%;
+                left: 0px;
+            }
+        }
+        &-value {
+            text-align: right;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            
+        }
+        &-wrapper {
+            grid-column: 1/3;
+            width: 100%;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+        }
+        &-bar {
+            width: 90%;
+            height: 14px;
+            background: $main-color;
+            border-radius: 4px;
+        }
+
+    }    
+    
+}

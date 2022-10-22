@@ -25,10 +25,13 @@
         }
 
     }
-    &__subtitle{
-        padding-left: 3px;
+    &__title{
+        padding-left: 9px;
         position: relative;
         @include before_circle;
+        &:before {
+            left: -2px; 
+        }
     }
     &__items {
         margin-top: 35px;
