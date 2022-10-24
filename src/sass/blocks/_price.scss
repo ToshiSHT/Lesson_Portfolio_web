@@ -1,11 +1,12 @@
 .price {
+    min-height: 283px;
     margin-top: 65px;
     &__wrapper {
         width: 1040px;
         margin: 60px auto 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 368px);
-        grid-template-rows: 44px;
+        grid-template-rows: 162px;
         justify-content: space-between;
         &-col {
             min-height: 162px ;

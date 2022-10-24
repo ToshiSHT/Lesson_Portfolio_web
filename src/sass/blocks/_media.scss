@@ -1,0 +1,225 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .sidepanel {
+        display: none;
+    }
+    .about-me {
+        &__grid {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+        &__items {
+            grid-template-columns: 250px 250px;
+            column-gap: 20px;
+        }
+        &__item {
+            column-gap: 15px;
+            grid-template-columns: 40px 195px;
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding-left: 0;
+            column-gap: 100px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            width: 100%;
+            grid-template-columns: repeat(3,270px);
+            grid-template-rows: repeat(3,270px);
+        }
+        &__progress {
+            margin-top: 90px;
+            width: 100%;
+            grid-template-columns: repeat(2,350px);
+            grid-template-rows: repeat(3,70px);
+            justify-content: center;
+            row-gap: 90px;
+        }
+    }
+
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .about-me {
+        &__grid {
+            grid-template-columns: 300px 380px;
+        }
+        &__items {
+            grid-template-columns: 380px;
+            grid-template-rows : repeat(3 ,100px);
+            row-gap: 5px;
+        }
+        &__item {
+            column-gap: 15px;
+            grid-template-columns: 40px 320px;
+        }
+        &__subtitle {
+            font-size: 30px;
+            line-height: 50px;
+        }
+        &__text {
+            margin-top: 14px;
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+            padding: 20px 20px 0 20px;
+        }
+    }    
+    .skills {
+        &__wrapper {
+            width: 100%;
+            grid-template-columns: repeat(2,270px);
+            grid-template-rows: repeat(2,270px);
+        }
+     }    
+   
+    
+}
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+      
+    }
+    .title {
+        &_fz48{
+            font-size: 29px;
+        }
+        
+    }
+    .promo {
+        &__title {
+            width: 400px;
+            line-height: 39px;
+        }
+    }
+    .about-me {
+        padding-top: 40px;
+        height: 950px;
+        &__grid {
+            grid-template-columns: 100%;
+            grid-template-rows: 400px auto auto;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+        &__items {
+            grid-template-columns: 260px 260px;
+            grid-template-rows: 115px 115px;
+            column-gap:20px;
+            row-gap: 20px;
+        }
+        &__item {
+            grid-template-columns: 40px 200px;
+            column-gap: 15px;
+        }
+        &__text {
+            width: 100%;
+        }
+    }
+    .resume {
+        &__subtitle {
+            font-size: 30px;
+        }
+    }
+    .skills {
+        &__subtitle {
+            font-size: 30px;
+        }
+        &__progress {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6,70px);
+            row-gap: 20px;
+        }
+    }
+
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .promo {
+        background : url('../img/main_bg.jpg') no-repeat 57%/cover;
+        &__title {
+            width: 310px;
+            line-height: 39px;
+        }
+    }
+    .title {
+        &_fz48{
+            font-size: 25px;
+        }
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .promo {
+        &__btns {
+            margin-top: 30px;
+        }
+    }
+    .about-me {
+        height: 1100px;
+        padding-top: 40px;
+        &__grid {
+            grid-template-columns: 100%;
+            grid-template-rows: 340px auto auto;
+        }
+        &__items {
+            grid-template-columns: 1fr;
+            grid-template-rows: 115px 115px;
+            column-gap:20px;
+            row-gap: 20px;
+        }
+        &__item {
+            grid-template-columns: 40px 200px;
+            column-gap: 15px;
+        }
+        &__subtitle {
+            font-size: 24px;
+            line-height: 50px;
+        }  
+   
+    }
+    .resume {
+        &__subtitle {
+            font-size: 24px;
+        }
+    }
+    .skills {
+       margin-top: 40px;
+        &__subtitle {
+            margin-top: 20px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &__wrapper {
+            width: 100%;
+            grid-template-columns: 270px;
+            grid-template-rows: 270px;
+        }
+        &__progress {
+            row-gap: 40px;
+        }    
+        
+        &__progress-item {
+            grid-template-columns: auto auto;
+            
+        }
+     }    
+}

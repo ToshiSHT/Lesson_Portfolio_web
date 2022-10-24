@@ -1,6 +1,9 @@
 .btn {
-    width: 135px;
+   /*  width: 135px; */
     background: $main-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 12px 25px;
+    &:hover {
+        filter: drop-shadow(2px 2px 2px  rgb(158, 148, 148));
+    }
 }
