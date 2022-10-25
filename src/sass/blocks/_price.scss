@@ -9,6 +9,7 @@
         grid-template-rows: 162px;
         justify-content: space-between;
         &-col {
+            width: 100%;
             min-height: 162px ;
             display: flex;
             flex-direction: column;
@@ -16,8 +17,8 @@
         }
     }
     &__item {
+        width: 100%;
         padding-left: 25px;
-        width: 368px;
         height: 44px;
         display: grid;
         grid-template-columns: repeat(2, auto);
